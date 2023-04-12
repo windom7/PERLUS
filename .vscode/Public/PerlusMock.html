@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Quality Dashboard</title>
+
+</head>
+<body>
+    <h1>Data Quality Dashboard</h1>
+    <div>
+    <label for="document-filter">Document:</label>
+    <select id="document-filter">
+        <option value="">All</option>
+        <option value="Document A">Document A</option>
+        <option value="Document B">Document B</option>
+        <option value="Document C">Document C</option>
+    </select>
+    </div>
+    <div>
+    <label for="date-filter">Date:</label>
+    <select id="date-filter">
+        <option value="">All</option>
+        <option value="Mon Mar 28 2023">Mon Mar 28 2023</option>
+        <option value="Tue Mar 29 2023">Tue Mar 29 2023</option>
+        <option value="Wed Mar 30 2023">Wed Mar 30 2023</option>
+    </select>
+    </div>
+    <table id="data-table">
+    <thead>
+        <tr>
+        <th>Document</th>
+        <th>Last Modified</th>
+        <th>Status</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+    </table>
+
+    <!-- Add your JavaScript here
+    <script type="text/javascript">
+    const data = [
+        {
+        document: "Document A",
+        lastModified: "Mon Mar 28 2023 10:00:00 GMT-0400",
+        status: "Approved",
+        },
+        {
+        document: "Document B",
+        lastModified: "Tue Mar 29 2023 11:00:00 GMT-0400",
+        status: "Pending",
+        },
+        {
+        document: "Document C",
+        lastModified: "Wed Mar 30 2023 12:00:00 GMT-0400",
+        status: "Rejected",
+        },
+    ];
+
+    function updateTable() {
+        const documentFilter = document.getElementById("document-filter").value;
+        const dateFilter = document.getElementById("date-filter").value;
+        const table = document.querySelector("table tbody");
+        let filteredRows = "";
+        for (let i = 0; i < data.length; i++) {
+        const row = data[i];
+        if (
+            (documentFilter === "" || row.document === documentFilter) &&
+            (dateFilter === "" || new Date(row.lastModified).toDateString() === dateFilter)
+        ) {
+            filteredRows += `<tr>
+            <td>${row.document}</td>
+            <td>${new Date(row.lastModified).toUTCString()}</td>
+            <td>${row.status}</td>
+            </tr>`;
+        }
+        }
+        table.innerHTML = filteredRows;
+    }
+
+      // Add event listener to both select elements
+    const documentFilter = document.getElementById("document-filter");
+    documentFilter.addEventListener("change", updateTable);
+
+    const dateFilter = document.getElementById("date-filter");
+    dateFilter.addEventListener("change", updateTable);
+
+      // Call updateTable() initially to populate the table
+    updateTable();
+    </script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+header {
+    background-image:linear-gradient(to right, #333, #696767, #cec8c8);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    background-color: #070707;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    border-radius: 1rem;
+}
+
+nav li {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease-out;
+}
+
+nav a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+main {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 85rem;
+    text-align: center; 
+}
+
+section {
+    background-color: #fff;
+    padding: 1.0rem;
+    margin-top: 0.6rem;
+    margin-bottom: 1rem;
+    border: 0.5rem solid #ccc;
+    display: inline-block; 
+    text-align: center; 
+}
+
+
+section h2 {
+    margin-top: 0;
+}
+
+ul {
+    margin: .3rem 5rem;
+    padding-top: 1rem;
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+    padding-bottom: 1rem;
+    list-style: none;
+    border: 0.5rem solid #ccc;
+    border-radius: 5rem 5rem 5rem 5rem;
+}
+
+li {
+    justify-content: center;
+    margin-bottom: 1rem;
+    padding: 0rem;  
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    
+}
+
+
+table {
+    border-collapse: collapse;
+    min-width: 80rem;
+    margin: .5rem 0;
+    font-size: 0.9em;
+    overflow: hidden;
+    box-shadow: 0rem 0rem 20rem #6e7883;
+    align-content: center;
+
+}
+td, th {
+    border: 0.3rem solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+    
+}
+tr:hover {
+    background-color: #ddd;
+    
+}
+th {
+    background-image:linear-gradient(to right, #333, #696767, #cec8c8);
+    color: rgb(245, 240, 240);
+    
+}
+
+.filters select {
+    display: inline-block;
+    padding: .3rem .5rem; /* Add padding to the left and right */
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 1rem 0 2rem rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+}
+
+/* Add some space between the label and the select */
+.filters label {
+    row-gap: 5rem;
+}
+
+
+.filters label,
+.filters select {
+    margin: .5rem; /* remove margin from the child elements */
+}
+
+
+.stream-bar {
+    background-color: #070707;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.stream_text {
+    position: absolute;
+    padding-left: 100%;
+    font-size: 20px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #e2866a;
+    animation: stream 5s infinite linear;
+}
+
+.stream_text-delay {
+    color: #7818d9;
+    animation-delay: 2.5s;
+}
+
+.stream_text-delay2 {
+    color: #d96f18;
+    animation-delay: 3.5s;
+}
+
+@keyframes stream {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-130%);
+    }
+}
+.container {
+    max-width:  50rem;
+    margin:  auto;
+    padding: 1.5rem;
+    content: center;
+    background-color: #fff;
+    border-radius: 15rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    align-content: center;
+    align-items: center;
+}

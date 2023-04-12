@@ -1,0 +1,112 @@
+/* Set up some global styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+a {
+    color: #fff;
+}
+
+/* Create a camouflage background */
+.camo-bg {
+    background-image: url("https://cdn.pixabay.com/photo/2016/02/13/14/03/camouflage-1191140_1280.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Style the header and navigation */
+.header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-inline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-inline li {
+    margin-right: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #9b4dca;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #6f2684;
+}
+
+/* Style the main content */
+.main {
+    margin: 50px 0;
+}
+
+.section {
+    padding: 50px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.section-light {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.section-dark {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.lead {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.btn-lg {
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+.btn-primary {
+    background-color: #9b4dca;
+}
+
+.btn-danger {
+    background-color: #c9283e;
+}
+
+/* Style the footer */
+.footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.text-center {
+    text-align: center;
+}

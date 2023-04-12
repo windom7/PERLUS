@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="/CSS/Datasync.css">
+<head>
+	<title>Data Synchronization Page</title>
+
+	<script>
+		function updateFeed() {
+			// Get the feed element
+			var feed = document.getElementById("feed");
+
+			// Simulate a live feed update by appending a new message
+			var message = document.createElement("p");
+			message.innerHTML = "New data has been synchronized!";
+			feed.appendChild(message);
+
+			// Scroll to the bottom of the feed
+			feed.scrollTop = feed.scrollHeight;
+		}
+	</script>
+</head>
+<body>
+	<h1>Data Synchronization Page</h1>
+	<form>
+		<label for="email">Email</label>
+		<input type="text" id="email" name="email" required>
+
+		<label for="password">Password</label>
+		<input type="password" id="password" name="password" required>
+
+		<label for="data">Data</label>
+		<textarea id="data" name="data" rows="10" required></textarea>
+
+		<button type="submit" onclick="updateFeed()">Sync Data</button>
+	</form>
+
+	<div id="feed"></div>
+</body>
+</html>

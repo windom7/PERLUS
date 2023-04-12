@@ -1,0 +1,36 @@
+.military {
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0px 10px;
+    padding: 0px 5px;
+    text-align: center;
+}
+
+.military h1 {
+    color: #ffffff;
+    font-size: 24px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.military h2 {
+    color: #000000;
+    font-size: 16px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.military h3 {
+    color: #ffffff;
+    font-size: 12px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.military p {
+    color: #000000;
+    font-size: 16px;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}

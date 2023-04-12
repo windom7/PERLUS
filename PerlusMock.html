@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <title>Perlus Mock</title>
+    <link rel="stylesheet" href="/CSS/PerlusMock.css">
+<title>Dashboard Mock-Up</title>
+</head>
+<body onload="displayLastSyncedDate()">
+
+<header>
+    <h1>Dashboard Mock-Up</h1>
+</header>
+<nav class="navbar">
+    <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Analytics</a></li>
+    <li><a href="#">Settings</a></li>
+    </ul>
+</nav>
+<main>
+    <div class="container">
+            <section>
+                <h2>Last Unit Sync</h2>
+                <ul>
+                    <p>Last synced on: <span id="last-synced"></span>
+                    <li>Users: 1,000</li>
+                    <li>DSR Sync Sessions: 10,000</li>
+                    <li>Page Discrepancies: 50,000</li>
+                </ul>
+                </section>
+    </div>
+    
+    <section>
+        <h2>Document Sync Dashboard</h2>
+    <ul>
+        <table id="table">
+            <div class="filters">
+                <label for="document-filter">Filter</label>
+                <select id="document-filter">
+                    <option value="all-doc">All documents</option>
+                    <option value="UIC">UIC</option>
+                    <option value="UNIT">UNIT</option>
+                    <option value="STAT">STATUS</option>
+                    <option value="D/T">Date/Time</option>
+                </select>
+        
+                <label for="date-filter">Filter</label>
+                <select id="date-filter">
+                    <option value="">All dates</option>
+                    <option value="UIC1">March 23, 2023</option>
+                    <option value="march-24">March 24, 2023</option>
+                    <option value="march-25">March 25, 2023</option>
+                    <option value="march-26">March 26, 2023</option>
+                    <option value="march-27">March 27, 2023</option>
+                </select>
+            </div>
+            <thead>
+                <tr>
+                    <th>UIC</th>
+                    <th>UNIT</th>
+                    <th>STATUS</th>
+                    <th>DATE/TIME</th>
+                </tr>
+            </thead>
+        </table>
+    </ul>
+    </section>
+</main>
+<footer>
+    <div class="stream-bar">
+        <div class="stream_text">Stream 1</div>
+        <div class="stream_text stream_text-delay">Stream 2</div>
+        <div class="stream_text stream_text-delay2">Stream 3</div>
+    </div>    
+</footer>
+<script src="/.vscode/JS/Perlus.js"></script>
+</body>
+</html>
